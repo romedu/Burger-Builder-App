@@ -4,7 +4,7 @@ qwest.limit(1);
 
 export const getOrders = (all, page) => {
    return dispatch => {
-      return qwest.get(`/order${all ? "/all" : ""}?token=${localStorage.getItem("token")}&page=${page}`)
+      return qwest.get(`/api/order${all ? "/all" : ""}?token=${localStorage.getItem("token")}&page=${page}`)
                .then(data => JSON.parse(data.response))
                .then(data => {
                   let {status, orders, size} = data;
@@ -17,7 +17,7 @@ export const getOrders = (all, page) => {
 
 export const deleteOrder = id => {
    return dispatch => {
-      return qwest["delete"](`/order/${id}?token=${localStorage.getItem("token")}`)
+      return qwest["delete"](`/api/order/${id}?token=${localStorage.getItem("token")}`)
                .then(data => {
                   let {status} = data;
                   if(status && status !== 200 && status !== 201) throw data;

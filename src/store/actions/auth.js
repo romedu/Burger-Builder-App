@@ -10,7 +10,7 @@ export const verifyToken = message => {
    
    return dispatch => {
       if(timeLeft <= 0) return dispatch(logoutUser("Your Token Expired!"));
-      qwest.get(`/token/${currentToken}`)
+      qwest.get(`/api/token/${currentToken}`)
          .then(data => JSON.parse(data.response))
          .then(data => {
             let {status} = data,
@@ -31,7 +31,7 @@ export const verifyToken = message => {
 
 export const authenticateUser = (authType, payload) => {
    return dispatch => {
-      qwest.post(`/${authType}`, payload)
+      qwest.post(`/api/${authType}`, payload)
          .then(data => JSON.parse(data.response))
          .then(data => {
             let {status, token, tokenExpiration} = data,
