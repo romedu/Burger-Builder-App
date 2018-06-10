@@ -1,0 +1,41 @@
+.Nav {
+   width: fit-content;
+   font-size: 1.5em;
+   margin: 3vh auto;
+}
+
+.Item {
+   padding: 1vh 1vw;
+   margin: 0 0.05vw;
+   border: 1px solid white;
+   border-radius: 4px;
+   background-color: #8F5C2C;
+   color: white;
+   text-decoration: none; 
+}
+
+.Active, .Item:hover, .Item:active {
+   background-color: #703B09;
+   font-weight: bold;
+}
+
+@media (max-width: 999px){
+   .Item {
+      padding: 1vh 2.5vw;
+      margin: 0 0.4vw;
+   }
+}
+
+@media (min-width: 501px) and (max-width: 999px){
+   .Item {
+      font-size: 1.6em;
+   }
+}
+
+@media (min-width: 1000px) and (max-width: 1250px){
+   .Item {
+      padding: 1vh 2vw;
+      margin: 0 0.3vw;
+      font-size: 2em;
+   }
+}

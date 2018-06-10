@@ -1,0 +1,53 @@
+.loader {
+   width: 20vw;
+   height: 20vw;
+   margin: 4vh auto;
+   margin-bottom: 2em;
+   border: 12px solid lightgray;
+   border-right-color: rgb(0, 105, 255);
+   border-left-color: rgb(0, 255, 105);
+   border-radius: 50%;
+   animation: load 3s infinite linear;
+ }
+ 
+@media (min-width: 500px) {
+   .loader {
+      width: 5vw;
+      height: 5vw;
+   }   
+}
+
+ @keyframes load {
+   0% {
+     transform: rotate(0deg);
+   }
+   25% {
+     transform: rotate(90deg);
+   }
+   50% {
+     transform: rotate(180deg);
+     border-right-color: rgb(0, 255, 105);
+      border-left-color: rgb(0, 105, 255);
+   }
+   75% {
+     transform: rotate(270deg);
+   }
+   100% {
+     transform: rotate(360deg);
+   }
+ }
+ 
+ @keyframes appear {
+   0% {
+     opacity: 0.1;
+   }
+   33% {
+     opacity: 0.4;
+   }
+   66% {
+     opacity: 0.7;
+   }
+   100% {
+     opacity: 1;
+   }
+ }

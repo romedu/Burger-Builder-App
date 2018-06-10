@@ -1,0 +1,9 @@
+export const ADD_INGREDIENT = "ADD_INGREDIENT";
+export const REMOVE_INGREDIENT = "REMOVE_INGREDIENT";
+export const SET_USER = "SET_USER";
+export const LOGOUT_USER = "LOGOUT_USER";
+export const SET_ORDERS = "SET_ORDERS";
+export const REMOVE_ORDER = "REMOVE_ORDER";
+export const RESET_BURGER = "RESET_BURGER";
+export const NEW_MESSAGE = "NEW_MESSAGE";
+export const CLEAR_MESSAGE = "CLEAR_MESSAGE";

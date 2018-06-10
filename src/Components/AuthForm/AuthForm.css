@@ -1,0 +1,74 @@
+.authForm {
+   padding-top: 100px;
+   display: flex;
+   flex-flow: column;
+}
+
+.authForm h2 {
+   font-size: 2em;
+}
+
+.authForm > button, .form > button {
+   margin: 0 auto;
+}
+
+.authForm a {
+   color: inherit;
+   text-decoration: none;
+}
+
+.form {
+   display: flex;
+   flex-flow: column;
+   margin: 0;
+   width: 100%;
+}
+
+.form input {
+   width: 40vw;
+   padding: 0.5vh 2vw;
+   font-size: 1.5em;
+   text-align: center;
+   margin: 1vh auto;
+   border: 1px solid #703B09;
+   color: #703B09;
+   border-radius: 12px;
+   outline: none;
+}
+
+@media (max-width: 359px){
+   .form input {
+      font-size: 0.9em;
+   }
+}
+
+@media (min-width: 360px) and (max-width: 600px){
+   .form input {
+      font-size: 1em;
+   }
+}
+
+.form input:focus {
+   border-color: #40A4C8;
+}
+
+.form input[type=checkbox] {
+   width: fit-content;
+   margin-left: 0.5vw;
+   transform: scale(1.2);
+}
+
+fieldset input[type=text], fieldset input[type=password] {
+   margin-left: 52.227px;
+}
+
+.authForm h2 {
+   text-align: center;
+}
+
+.form fieldset {
+   border: none;
+   padding: 0;
+   margin: 0 auto;
+   width: fit-content;
+}
